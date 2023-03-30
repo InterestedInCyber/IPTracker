@@ -5,6 +5,7 @@
     Created on:   	29/03/2023 12:03 PM
     Created by:   	Bobby (InterestedInCyber)
     Uploaded on:    30/03/2023 20:42
+    Edited on:      30/03/2023 20:44
     Organization: 	N/A
     Filename:     	IPTracker.ps1
     ===========================================================================
@@ -34,10 +35,6 @@ function AskForIPAddress {
     if ($IPAddress -eq "clear") {
         Clear-Host
         AskForIPAddress
-    }
-
-    if ($IPAddress -eq "back") {
-        AskForProgram
     }
     
     if ($IPAddress -notmatch $IPStandards) {
